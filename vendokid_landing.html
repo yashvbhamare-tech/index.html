@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vendokid — Smart Vending, Launching From Pune</title>
+<style>
+  :root {
+    --bg: #0F0F0F;
+    --accent: #FF5A36;
+    --white: #FFFFFF;
+    --gray: #B3B3B3;
+    --card: #1C1C1C;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  img { max-width: 100%; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  header.nav {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 10;
+    background: rgba(15,15,15,0.9);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #222;
+  }
+  .navrow {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px;
+    max-width: 720px; margin: 0 auto;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .badge {
+    width: 30px; height: 30px; border-radius: 8px;
+    background: var(--accent); color: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 15px;
+  }
+  .brandname { font-weight: 700; letter-spacing: 1px; font-size: 15px; }
+  .navcta {
+    background: var(--accent); color: var(--bg);
+    padding: 8px 16px; border-radius: 999px;
+    font-weight: 700; font-size: 12px; text-decoration: none;
+    white-space: nowrap;
+  }
+
+  section { padding: 64px 0; }
+  .tag {
+    color: var(--accent); font-weight: 700; font-size: 12px;
+    letter-spacing: 3px; text-transform: uppercase; margin-bottom: 14px;
+  }
+  h1 {
+    font-size: clamp(34px, 8vw, 54px);
+    line-height: 1.08; margin: 0 0 18px 0; font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(24px, 5vw, 32px);
+    margin: 0 0 14px 0; font-weight: 800;
+  }
+  p.lead { color: var(--gray); font-size: 17px; line-height: 1.6; max-width: 520px; }
+
+  .hero { padding-top: 56px; }
+  .hero .est {
+    color: var(--gray); font-size: 12px; letter-spacing: 3px; font-weight: 700; margin-top: 8px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--accent); color: var(--bg);
+    padding: 15px 28px; border-radius: 999px;
+    font-weight: 700; font-size: 15px; text-decoration: none;
+    margin-top: 26px;
+  }
+  .btn-secondary {
+    display: inline-block;
+    border: 1.5px solid #333; color: var(--white);
+    padding: 13px 26px; border-radius: 999px;
+    font-weight: 700; font-size: 14px; text-decoration: none;
+    margin-top: 26px; margin-left: 10px;
+  }
+
+  .divider { height: 1px; background: #1f1f1f; }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+  @media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card); border-radius: 14px; padding: 26px;
+  }
+  .card h3 { margin: 0 0 10px 0; font-size: 19px; }
+  .card p { color: var(--gray); font-size: 14.5px; line-height: 1.55; margin: 0 0 18px 0; }
+  .card a { color: var(--accent); font-weight: 700; font-size: 13.5px; text-decoration: none; }
+
+  .quote {
+    font-size: clamp(22px, 5vw, 30px); font-weight: 800; line-height: 1.3;
+    border-left: 3px solid var(--accent); padding-left: 20px;
+  }
+
+  footer {
+    padding: 40px 0 calc(40px + env(safe-area-inset-bottom, 0px));
+    color: #777; font-size: 13px;
+  }
+  footer .foottop { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  footer a { color: #999; text-decoration: none; margin-left: 16px; font-weight: 700; }
+
+  ::selection { background: var(--accent); color: var(--bg); }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="navrow">
+    <div class="brand">
+      <div class="badge">V</div>
+      <div class="brandname">VENDOKID</div>
+    </div>
+    <a class="navcta" href="https://instagram.com/vendokid" target="_blank" rel="noopener">Join Waitlist</a>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="tag">Launching From Pune</div>
+    <h1>Built for the generation<br>that doesn't wait.</h1>
+    <p class="lead">Vendokid is a smart vending brand for everyday India — modernizing how people buy the simple things, one location at a time.</p>
+    <div class="est">VENDOKID &nbsp;•&nbsp; EST. 2026</div>
+    <div>
+      <a class="btn-primary" href="https://instagram.com/vendokid" target="_blank" rel="noopener">Join the Waitlist</a>
+      <a class="btn-secondary" href="#story">Follow the Story</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="story">
+    <div class="tag">The Story</div>
+    <h2>Still being built. In public.</h2>
+    <p class="lead">Every part of this — the name, the machine, the first location — is being figured out in real time, and documented as it happens. No highlight reel, just the actual journey.</p>
+    <a class="btn-secondary" href="https://instagram.com/vendokid" target="_blank" rel="noopener" style="margin-left:0;">Watch the Journey →</a>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <div class="tag">Get Involved</div>
+    <h2>Two ways in, right now.</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Have a space?</h3>
+        <p>Offices, colleges, gyms, cafés, co-working spaces — if you run a location in Pune, you could be one of the first Vendokid sites.</p>
+        <a href="https://instagram.com/vendokid" target="_blank" rel="noopener">DM "LOCATION" on Instagram →</a>
+      </div>
+      <div class="card">
+        <h3>Have a product?</h3>
+        <p>Indian snack, beverage, or essentials brands — get early access to a distribution channel built for how this generation actually shops.</p>
+        <a href="https://instagram.com/vendokid" target="_blank" rel="noopener">DM "BRAND" on Instagram →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <p class="quote">"The first location isn't chosen. It's earned."</p>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap foottop">
+    <div>VENDOKID &nbsp;•&nbsp; EST. 2026 &nbsp;•&nbsp; PUNE, INDIA</div>
+    <div>
+      <a href="https://instagram.com/vendokid" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
